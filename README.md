@@ -2,9 +2,11 @@
 This is our attempt to create a superset template of create-react-app that includes Router, Redux, and Jest (or Enzyme, if we feel like it) and other cool stuff as we see fit.  
 
 #TO-DO
+* Figure out how to have the alternate _react-scripts_ file on github and link to it.
+* Figure out how to add new dependencies to whatever creates the `package.json` of the created app
 * Make sure jest works for testing
 * Add Redux components and associated tests
-* Add Router 
+* Add Router
 
 ##Disclaimer!!!
 This has *nothing* to do with Facebook other than that we forked it from create-react-app.  *Please* do not assume we are Facebook engineers or sue us because this doesn't work!
