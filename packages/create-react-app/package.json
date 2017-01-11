@@ -17,7 +17,7 @@
     "index.js"
   ],
   "bin": {
-    "create-react-app": "./index.js"
+    "rrr-tested": "./index.js"
   },
   "dependencies": {
     "chalk": "^1.1.1",

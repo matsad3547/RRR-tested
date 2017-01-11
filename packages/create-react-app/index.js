@@ -133,13 +133,15 @@ function createApp(name, verbose, version) {
   run(root, appName, version, verbose, originalDirectory);
 }
 
+//modified
 function shouldUseYarn() {
-  try {
-    execSync('yarnpkg --version', {stdio: 'ignore'});
-    return true;
-  } catch (e) {
-    return false;
-  }
+  return false;
+  // try {
+  //   execSync('yarnpkg --version', {stdio: 'ignore'});
+  //   return true;
+  // } catch (e) {
+  //   return false;
+  // }
 }
 
 function install(packageToInstall, verbose, callback) {
@@ -187,8 +189,10 @@ function run(root, appName, version, verbose, originalDirectory) {
   });
 }
 
+//modified
 function getInstallPackage(version) {
-  var packageToInstall = 'react-scripts';
+  var packageToInstall = path.join(__dirname,'../react-scripts');
+  // var packageToInstall = 'react-scripts';
   var validSemver = semver.valid(version);
   if (validSemver) {
     packageToInstall += '@' + validSemver;

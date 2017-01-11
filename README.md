@@ -1,3 +1,9 @@
+# RRR - Tested
+This is our attempt to create a superset template of create-react-app that includes Router, Redux, and Jest (or Enzyme, if we feel like it) and other cool stuff as we see fit.  
+
+##Disclaimer!!!
+This has *nothing* to do with Facebook other than that we forked it from create-react-app.  *Please* do not assume we are Facebook engineers or sue us because this doesn't work!
+
 # Create React App [![Build Status](https://travis-ci.org/facebookincubator/create-react-app.svg?branch=master)](https://travis-ci.org/facebookincubator/create-react-app)
 
 Create React apps with no build configuration.
