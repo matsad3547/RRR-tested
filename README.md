@@ -14,10 +14,8 @@ $ create-rx3-app <your project name>
 ```
 
 #TO-DO
-* Figure out how to add new dependencies to whatever creates the `package.json` of the created app
 * Make sure jest works for testing
 * Add Redux components and associated tests
-* Add Router
 * Create easy to use and edit template for all these libraries with tests
 
 ##Disclaimer!!!
