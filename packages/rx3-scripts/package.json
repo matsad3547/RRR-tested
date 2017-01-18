@@ -20,7 +20,7 @@
     "utils"
   ],
   "bin": {
-    "react-scripts": "./bin/react-scripts.js"
+    "rx3-scripts": "./bin/react-scripts.js"
   },
   "dependencies": {
     "autoprefixer": "6.5.1",

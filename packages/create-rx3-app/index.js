@@ -68,14 +68,15 @@ var program = require('commander')
     projectName = name;
   })
   .option('--verbose', 'print additional logs')
-  .option('--scripts-version <alternative-package>', 'use a non-standard version of react-scripts')
+  //modified
+  .option('--scripts-version <alternative-package>', 'use a non-standard version of rx3-scripts')
   .on('--help', function () {
     console.log('    Only ' + chalk.green('<project-directory>') + ' is required.');
     console.log();
     console.log('    A custom ' + chalk.cyan('--scripts-version') + ' can be one of:');
     console.log('      - a specific npm version: ' + chalk.green('0.8.2'));
-    console.log('      - a custom fork published on npm: ' + chalk.green('my-react-scripts'));
-    console.log('      - a .tgz archive: ' + chalk.green('https://mysite.com/my-react-scripts-0.8.2.tgz'));
+    console.log('      - a custom fork published on npm: ' + chalk.green('my-rx3-scripts'));
+    console.log('      - a .tgz archive: ' + chalk.green('https://mysite.com/my-rx3-scripts-0.8.2.tgz'));
     console.log('    It is not needed unless you specifically want to use a fork.');
     console.log();
     console.log('    If you have any problems, do not hesitate to file an issue:');
@@ -108,9 +109,9 @@ function createApp(name, verbose, version) {
     console.log('Try using a new directory name.');
     process.exit(1);
   }
-
+  //modified
   console.log(
-    'Creating a new React app in ' + chalk.green(root) + '.'
+    'Creating a new RX3 app in ' + chalk.green(root) + '.'
   );
   console.log();
 
@@ -127,7 +128,8 @@ function createApp(name, verbose, version) {
   process.chdir(root);
 
   console.log('Installing packages. This might take a couple minutes.');
-  console.log('Installing ' + chalk.cyan('react-scripts') + '...');
+  //modified
+  console.log('Installing ' + chalk.cyan('rx3-scripts') + '...');
   console.log();
 
   run(root, appName, version, verbose, originalDirectory);
@@ -135,13 +137,12 @@ function createApp(name, verbose, version) {
 
 //modified
 function shouldUseYarn() {
-  return false;
-  // try {
-  //   execSync('yarnpkg --version', {stdio: 'ignore'});
-  //   return true;
-  // } catch (e) {
-  //   return false;
-  // }
+  try {
+    execSync('yarnpkg --version', {stdio: 'ignore'});
+    return true;
+  } catch (e) {
+    return false;
+  }
 }
 
 function install(packageToInstall, verbose, callback) {
@@ -246,7 +247,8 @@ function checkNodeVersion(packageName) {
 function checkAppName(appName) {
   // TODO: there should be a single place that holds the dependencies
   var dependencies = ['react', 'react-dom'];
-  var devDependencies = ['react-scripts'];
+  //modified
+  var devDependencies = ['rx3-scripts'];
   var allDependencies = dependencies.concat(devDependencies).sort();
 
   if (allDependencies.indexOf(appName) >= 0) {
