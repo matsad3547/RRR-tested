@@ -193,7 +193,7 @@ function run(root, appName, version, verbose, originalDirectory) {
 function getInstallPackage(version) {
   // var packageToInstall = path.join(__dirname,'../rrr-scripts');
   // var packageToInstall = 'react-scripts';
-  var packageToInstall = 'rrr-scripts';
+  var packageToInstall = 'rx3-scripts';
   var validSemver = semver.valid(version);
   if (validSemver) {
     packageToInstall += '@' + validSemver;
