@@ -23,11 +23,12 @@ module.exports = function(appPath, appName, verbose, originalDirectory) {
   appPackage.devDependencies = appPackage.devDependencies || {};
 
   // Setup the script rules
+  //modified
   appPackage.scripts = {
-    'start': 'react-scripts start',
-    'build': 'react-scripts build',
-    'test': 'react-scripts test --env=jsdom',
-    'eject': 'react-scripts eject'
+    'start': 'rx3-scripts start',
+    'build': 'rx3-scripts build',
+    'test': 'rx3-scripts test --env=jsdom',
+    'eject': 'rx3-scripts eject'
   };
 
   fs.writeFileSync(
@@ -74,9 +75,10 @@ module.exports = function(appPath, appName, verbose, originalDirectory) {
       verbose && '--verbose'
     ].filter(function(e) { return e; });
   }
-  args.push('react', 'react-dom');
+  //modified
+  args.push('react', 'react-dom', 'redux', 'react-router');
 
-  console.log('Installing react and react-dom using ' + command + '...');
+  console.log('Installing react and react-dom with router and redux using ' + command + '...');
   console.log();
 
   var proc = spawn(command, args, {stdio: 'inherit'});
