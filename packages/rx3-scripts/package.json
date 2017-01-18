@@ -1,6 +1,6 @@
 {
   "name": "rx3-scripts",
-  "version": "0.8.5",
+  "version": "0.0.1",
   "description": "Configuration and scripts for Create RX3 App - a superset of create react app.",
   "repository": "matsad3547/create-rx3-app",
   "license": "BSD-3-Clause",
