@@ -1,7 +1,9 @@
 # create-rx3-app
 This is our attempt to create a superset template of create-react-app that includes Router, Redux, and Jest (or Enzyme, if we feel like it) and other cool stuff as we see fit.  
 
-To make it work, you first need to *** do things ***
+To make it work, you first need to the following:
+* navigate to create-rx3-app/packages/create-rx3-app folder
+* run `$ npm link`
 
 #TO-DO
 * Figure out how to have the alternate to _react-scripts_ file on github or npm and link to it.

@@ -1,23 +1,23 @@
 {
-  "name": "create-react-app",
+  "name": "create-rx3-app",
   "version": "1.0.3",
   "keywords": [
     "react"
   ],
-  "description": "Create React apps with no build configuration.",
-  "repository": "facebookincubator/create-react-app",
+  "description": "Create rx3 apps with no build configuration.",
+  "repository": "matsad3547/create-rx3-app",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=4"
   },
   "bugs": {
-    "url": "https://github.com/facebookincubator/create-react-app/issues"
+    "url": "https://github.com/matsad3547/create-rx3-app/issues"
   },
   "files": [
     "index.js"
   ],
   "bin": {
-    "rrr-tested": "./index.js"
+    "create-rx3-app": "./index.js"
   },
   "dependencies": {
     "chalk": "^1.1.1",

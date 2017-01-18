@@ -1,14 +1,14 @@
 {
-  "name": "rrr-scripts",
+  "name": "rx3-scripts",
   "version": "0.8.5",
-  "description": "Configuration and scripts for Create React App.",
-  "repository": "facebookincubator/create-react-app",
+  "description": "Configuration and scripts for Create RX3 App - a superset of create react app.",
+  "repository": "matsad3547/create-rx3-app",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=4"
   },
   "bugs": {
-    "url": "https://github.com/facebookincubator/create-react-app/issues"
+    "url": "https://github.com/matsad3547/create-rx3-app/issues"
   },
   "files": [
     ".babelrc",
